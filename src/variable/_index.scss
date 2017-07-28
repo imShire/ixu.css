@@ -1,0 +1,97 @@
+/**
+ * [$FontSize]
+ * @type {[type]}
+ */
+ $font-family:
+   // Safari for OS X and iOS (San Francisco)
+   -apple-system,
+   // Chrome for OS X (San Francisco)
+   BlinkMacSystemFont,
+   // Windows
+   'Segoe UI',
+   // Android
+   'Roboto',
+   // Linux
+   'Oxygen', // KDE
+   'Ubuntu',
+   'Cantarell', // GNOME
+   // Firefox OS [R.I.P.]
+   'Fira Sans',
+   // Older Android
+   'Droid Sans',
+   // Chinese font for OSX and iOS
+   'Hiragino Sans GB',
+   // Chinese font for Windows
+   'Microsoft Yahei', '微软雅黑',
+   // Basic web fallback
+   Arial, Helvetica, STHeiti, sans-serif,
+   // Emoji
+   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
+ $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+
+/**
+ * [$FontSize]
+ * @type {[type]}
+ */
+$rem-base:10px;
+$font-size: 1.8rem !default;
+$font-size-small: 85% !default;
+$font-size-code: $font-size-small !default;
+
+$line-height: 1.5 !default;
+
+$line-height-input: 1.25 !default;
+// line-height need to be set to pre, not code
+$line-height-pre: 1.2 !default;
+
+$font-weight-bold: 600 !default;
+
+
+/**
+ * [$color]
+ * @type {[type]}
+ */
+// common
+$color-text: #333 !default;
+$color-text-muted: #777 !default;
+$color-text-danger: #dd514c !default;
+$color-text-primary: #3bb4f2 !default;
+
+$color-border: #ddd !default;
+
+$color-background: #fff !default;
+$color-background-over: rgba(0, 0, 0, 0.05) !default;
+$color-background-gray: #f3f3f3 !default;
+
+$padding-code: 1px 2px !default;
+
+
+//
+// Spacing
+//
+
+$width-gap: 14px !default;
+$width-gap-double: 28px !default;
+$width-gap-half: 7px !default;
+
+$width-gap-big: 32px !default;
+
+$width-padding-input: 5px !default;
+
+$width-border: 1px !default;
+
+// $width-padding-input + $width-border
+$width-padding-border-input: 6px !default;
+
+// `mark`
+$color-background-mark: #ff0 !default;
+
+
+$font-size-sub-sup: 75% !default;
+$border-top-hr: $width-border solid $color-border !default;
+$border-left-blockquote: $width-padding-input solid $color-border !default;
+// Set the default max-height to scroll-view
+$max-height-scroll-view: 300px !default;
+

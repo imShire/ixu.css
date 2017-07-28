@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import "mixin/_index.scss";
+@import "reset/_index.scss";
+@import "variable/_index.scss";
+@import "core/_index.scss";
+
+
+html {
+  font-size: $rem-base;
+}
+
