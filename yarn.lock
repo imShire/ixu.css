@@ -2387,6 +2387,10 @@ isstream@~0.1.1, isstream@~0.1.2:
   version "0.1.2"
   resolved "http://registry.npm.taobao.org/isstream/download/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+ixu.css@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/ixu.css/download/ixu.css-1.0.0.tgz#5c3da4745e622b596381a9686f05c762e66d2360"
+
 js-base64@^2.1.8:
   version "2.1.9"
   resolved "http://registry.npm.taobao.org/js-base64/download/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"

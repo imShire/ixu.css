@@ -1,8 +1,11 @@
 {
   "name": "ixu.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ixu.css",
-  "author": "JaneCC <i@janecc.com>",
+  "author": {
+    "email": "i@janecc.com",
+    "name": "JaneCC"
+  },
   "private": false,
   "scripts": {
     "dev": "gulp",
@@ -44,10 +47,13 @@
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
-  "main": "src/main.js",
+  "main": "dist/ixu.css",
   "bugs": {
     "url": "https://github.com/ubuntuvim/randomNichname/issues"
   },
-  "repository": "https://github.com/JaneCC/ixu.css.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaneCC/ixu.css.git"
+  },
   "license": "MIT"
 }
