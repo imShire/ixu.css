@@ -66,6 +66,6 @@ gulp.task('watch:styles', function () {
 
 gulp.task('watch', gulp.series('watch:styles'))
 gulp.task('default', gulp.series('watch'))
-gulp.task('build:css', gulp.series('scss'))
+gulp.task('build', gulp.series('scss'))
 // gulp.task('build:up', gulp.series('img:prod', minifyCss))
 

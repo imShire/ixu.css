@@ -5,9 +5,16 @@
   "author": "JaneCC <i@janecc.com>",
   "private": false,
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev node build/dev-server.js",
-    "build": "node build/build.js"
+    "dev": "gulp",
+    "test": "gulp",
+    "build": "gulp build"
   },
+  "keywords": [
+    "ixu",
+    "scss",
+    "sass",
+    "css"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -38,6 +45,9 @@
     "npm": ">= 3.0.0"
   },
   "main": "src/main.js",
+  "bugs": {
+    "url": "https://github.com/ubuntuvim/randomNichname/issues"
+  },
   "repository": "https://github.com/JaneCC/ixu.css.git",
   "license": "MIT"
 }
