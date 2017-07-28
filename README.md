@@ -2,13 +2,13 @@
 
 采用postcss输出css
 
-[![Mobi.css Logo](http://getmobicss.com/assets/img/mobi-logo-512.png)](http://getmobicss.com/) [![Build Status](https://img.shields.io/travis/mobi-css/mobi.css.svg?style=flat-square)](https://travis-ci.org/mobi-css/mobi.css) [![npm package](https://img.shields.io/npm/v/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css) [![npm downloads](http://img.shields.io/npm/dm/mobi.css.svg?style=flat-square)](https://www.npmjs.org/package/mobi.css)
+[![ixu.css Logo](https://janecc.cdn.ixu.me/wp-content/uploads/2017/06/ixu-logo-128x128.png)](https://ixu.me/)
 
 ## License
 
-[MIT](https://github.com/mobi-css/mobi.css/blob/master/LICENSE)
+[MIT](https://github.com/JaneCC/ixu.css/blob/master/LICENSE)
 
-# [ixu.css](http://getmobicss.com/zh-cn/)
+# [ixu.css](https://ixu.me/)
 
 > 轻量灵活的移动端 CSS 框架。
 
@@ -73,6 +73,8 @@ npm install --save ixu.css
 - 标注为 (*) 的浏览器可能没有很好的测试，但是应该能够正常工作
 
 ## 参与贡献
+
+- 感谢 [xueliang huang]() 调试和修复 macOS 上的问题
 
 ### 如何开始
 

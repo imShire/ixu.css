@@ -10,9 +10,10 @@
 	white-space: nowrap;
 	word-wrap: normal;
 }
-/*
- * 文字溢出显示省略号
-*/
+/**
+ * 多行文字溢出显示省略号
+ * @type {[type]}
+ */
 @mixin ellipsisLn($line) {
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -20,10 +21,18 @@
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: $line;
 }
+/**
+ * 自动换行
+ * @type {[type]}
+ */
 @mixin text_wrap() {
 	word-wrap: break-word;
 	word-break: break-all;
 }
+/**
+ * 英文断字
+ * @type {[type]}
+ */
 @mixin hyphens() {
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
