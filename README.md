@@ -4,6 +4,8 @@
 
 [![ixu.css Logo](https://janecc.cdn.ixu.me/wp-content/uploads/2017/06/ixu-logo-128x128.png)](https://ixu.me/)
 
+[![Build Status](https://travis-ci.org/JaneCC/ixu.css.svg?branch=master)](https://travis-ci.org/JaneCC/ixu.css)
+
 ## License
 
 [MIT](https://github.com/JaneCC/ixu.css/blob/master/LICENSE)
