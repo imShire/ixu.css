@@ -44,11 +44,9 @@ blockquote,
 dl,
 figure,
 hr,
-ol,
 p,
 pre,
-table,
-ul {
+table{
 	margin: $width-gap 0 0;
 }
 
@@ -102,7 +100,8 @@ blockquote {
 
 ol,
 ul {
-	padding-left: $width-gap-double;
+	padding: 0;
+	// padding-left: $width-gap-double;
 }
 
 dd,

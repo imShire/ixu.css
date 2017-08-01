@@ -5,7 +5,6 @@ import sass from 'gulp-sass'
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
 import sourcemaps from 'gulp-sourcemaps'
-// import config from './config/secret.js'
 const isEnv = process.env.NODE_ENV == 'production'
 
 const path = {
@@ -55,17 +54,14 @@ gulp.task('scss', function () {
     .pipe(gulp.dest(path.scss.dest))
 })
 
-// 新版:
-// var watcher = gulp.watch(path.scss.all);
 gulp.task('watch:styles', function () {
 	gulp.watch(path.scss.all,gulp.series('scss'))
 });
+
 /**
  * 上传到生产服务器上
  */
-
 gulp.task('watch', gulp.series('watch:styles'))
 gulp.task('default', gulp.series('watch'))
 gulp.task('build', gulp.series('scss'))
-// gulp.task('build:up', gulp.series('img:prod', minifyCss))
 

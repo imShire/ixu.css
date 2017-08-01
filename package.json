@@ -1,10 +1,11 @@
 {
   "name": "ixu.css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ixu.css",
   "author": {
     "email": "i@janecc.com",
-    "name": "JaneCC"
+    "name": "JaneCC",
+	"url":"https://ixu.me"
   },
   "private": false,
   "scripts": {
