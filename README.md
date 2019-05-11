@@ -24,12 +24,6 @@
 
 你可以在[这个页面](https://github.com/JaneCC/ixu.css/releases)下载 ixu.css，然后使用压缩后的版本：`dist/ixu.min.css`。
 
-或者使用 [cdnjs](https://cdnjs.com/libraries/ixu.css):
-
-```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ixu.css/1.1.0/ixu.min.css" />
-```
-
 或者使用 npm 安装：
 
 ```shell
