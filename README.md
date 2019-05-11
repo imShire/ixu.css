@@ -22,7 +22,7 @@
 
 ## 开始使用
 
-你可以在[这个页面](https://github.com/JaneCC/ixu.css/releases)下载 Mobi.css，然后使用压缩后的版本：`dist/ixu.min.css`。
+你可以在[这个页面](https://github.com/JaneCC/ixu.css/releases)下载 ixu.css，然后使用压缩后的版本：`dist/ixu.min.css`。
 
 或者使用 [cdnjs](https://cdnjs.com/libraries/ixu.css):
 
@@ -76,7 +76,7 @@ npm install --save ixu.css
 
 ## 参与贡献
 
-- 感谢 [xueliang huang]() 调试和修复 macOS 上的问题
+
 
 ### 如何开始
 
@@ -95,4 +95,5 @@ npm test
 
 ## 谁在用 ixu.css?
 
-- [马蹄香](www.matixiang.com) 马蹄香绘画
+- [马蹄香](www.matixiang.com)
+- [数企](www.bdsaas.com)

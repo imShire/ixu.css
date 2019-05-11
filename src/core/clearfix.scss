@@ -1,0 +1,5 @@
+@import '../mixins/clearfix';
+
+.ixu-clearfix {
+    @include clearfix;
+}

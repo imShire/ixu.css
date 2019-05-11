@@ -1,0 +1,48 @@
+// [class*='ixu-hairline'] {
+//     display: block;
+// }
+
+// [class*='ixu-hairline']::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 200%;
+//     height: 200%;
+//     -webkit-transform: scale(.5);
+//     transform: scale(.5);
+//     -webkit-transform-origin: 0 0;
+//     transform-origin: 0 0;
+//     pointer-events: none;
+//     box-sizing: border-box;
+//     border: 0 solid $color-light;
+// }
+
+// 参考vant hairline
+.hairline-common {
+    position: absolute;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
+}
+
+@mixin hairline($border-color: #ebedf0) {
+    @extend .hairline-common;
+
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    border: 0 solid $border-color;
+    transform: scale(0.5);
+}
+
+@mixin hairline-bottom($border-color: #ebedf0, $left: 0) {
+    @extend .hairline-common;
+
+    right: 0;
+    bottom: 0;
+    left: $left;
+    border-bottom: 1px solid $border-color;
+    transform: scaleY(0.5);
+}

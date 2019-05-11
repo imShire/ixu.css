@@ -1,11 +1,17 @@
 @charset "UTF-8";
+
 @import "_base.scss";
-.init-loading{width: 100%;height: 100vh;position: fixed;left: 0;top: 0;z-index: 100;background: #000;color: #FFF;text-align: center;line-height: 100vh;font-size: 20px;}
 
-
-
-
-
-
-
-
+.init-loading {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 20px;
+}

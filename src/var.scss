@@ -2,33 +2,44 @@
  * [$FontSize]
  * @type {[type]}
  */
- $font-family:
-   // Safari for OS X and iOS (San Francisco)
-   -apple-system,
-   // Chrome for OS X (San Francisco)
-   BlinkMacSystemFont,
-   // Windows
-   'Segoe UI',
-   // Android
-   'Roboto',
-   // Linux
-   'Oxygen', // KDE
-   'Ubuntu',
-   'Cantarell', // GNOME
-   // Firefox OS [R.I.P.]
-   'Fira Sans',
-   // Older Android
-   'Droid Sans',
-   // Chinese font for OSX and iOS
-   'Hiragino Sans GB',
-   // Chinese font for Windows
-   'Microsoft Yahei', '微软雅黑',
-   // Basic web fallback
-   Arial, Helvetica, STHeiti, sans-serif,
-   // Emoji
-   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+$font-family: // Safari for OS X and iOS (San Francisco)
+-apple-system,
+// Chrome for OS X (San Francisco)
+BlinkMacSystemFont,
+// Windows
+'Segoe UI',
+// Android
+'Roboto',
+// Linux
+'Oxygen',
+// KDE
+'Ubuntu',
+'Cantarell',
+// GNOME
+// Firefox OS [R.I.P.]
+'Fira Sans',
+// Older Android
+'Droid Sans',
+// Chinese font for OSX and iOS
+'Hiragino Sans GB',
+// Chinese font for Windows
+'Microsoft Yahei',
+// Basic web fallback
+Arial,
+Helvetica,
+STHeiti,
+sans-serif,
+// Emoji
+'Apple Color Emoji',
+'Segoe UI Emoji',
+'Segoe UI Symbol' !default;
 
- $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace: Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace !default;
 
 
 /**
@@ -36,7 +47,7 @@
  * @type {[type]}
  */
 $rem-base:10px;
-$font-size: 1.8rem ;
+$font-size: 1.8rem;
 $font-size-small: 85% !default;
 $font-size-code: $font-size-small !default;
 
@@ -94,4 +105,3 @@ $border-top-hr: $width-border solid $color-border !default;
 $border-left-blockquote: $width-padding-input solid $color-border !default;
 // Set the default max-height to scroll-view
 $max-height-scroll-view: 300px !default;
-

@@ -1,0 +1,282 @@
+@charset "UTF-8";
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    // Changes the default tap highlight in iOS.
+    -webkit-tap-highlight-color: transparent;
+    // Prevent adjustments of font size after orientation changes in IE and iOS.
+    text-size-adjust: 100%;
+}
+
+body {
+    // background-color: $color-background-gray;
+    color: $color-text;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0;
+}
+
+//
+// Typography
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: $width-gap-big 0 0;
+}
+
+address,
+blockquote,
+dl,
+figure,
+hr,
+p,
+pre,
+table {
+    margin: $width-gap 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-bold;
+}
+
+// h1 { font-size: $font-size-h1; }
+// h2 { font-size: $font-size-h2; }
+// h3 { font-size: $font-size-h3; }
+// h4 { font-size: $font-size-h4; }
+// h5 { font-size: $font-size-h5; }
+// h6 { font-size: $font-size-h6; }
+
+a {
+    color: $color-text-primary;
+    text-decoration: none;
+    // Remove gaps in links underline in iOS 8+ and Safari 8+.
+    -webkit-text-decoration-skip: objects;
+
+    &:active,
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+b,
+dt,
+strong {
+    font-weight: $font-weight-bold;
+}
+
+code,
+kbd,
+samp {
+    background-color: $color-background-over;
+    font-family: $font-family-monospace;
+    font-size: $font-size-code;
+    padding: $padding-code;
+}
+
+blockquote {
+    border-left: $border-left-blockquote;
+    color: $color-text-muted;
+    padding-left: $width-gap;
+}
+
+ol,
+ul {
+    padding: 0;
+    // padding-left: $width-gap-double;
+}
+
+dd,
+dt,
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-top: $border-top-hr;
+}
+
+small {
+    font-size: $font-size-small;
+}
+
+// Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+
+sub,
+sup {
+    font-size: $font-size-sub-sup;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+address,
+time {
+    color: $color-text-muted;
+    font-style: normal;
+}
+
+mark {
+    background-color: $color-background-mark;
+    color: $color-text;
+    padding: 0 0.2em;
+}
+
+abbr[title] {
+    border-bottom: 0;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+//
+// Embedded Content
+//
+// Add the correct display in iOS 4-7.
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+audio,
+video {
+    width: 100%;
+}
+
+//
+// Forms
+//
+// iOS "clickable elements" fix for role="button"
+//
+// Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+// for traditionally non-focusable elements with role="button"
+// see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+
+[role="button"] {
+    cursor: pointer;
+}
+
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+
+[role="button"],
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+    outline: 0;
+    touch-action: manipulation;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+// change select height
+
+select {
+    -webkit-appearance: none;
+}
+
+button,
+// Prevent a WebKit bug where (*) destroys native `audio` and `video` controls in Android 4.
+
+::-webkit-file-upload-button,
+[type=reset],
+[type=submit],
+html [type=button] {
+    // (*) Correct the inability to style clickable types in iOS and Safari.
+    appearance: button;
+}
+
+[type=search] {
+    // Correct the odd appearance in Chrome and Safari.
+    appearance: none;
+}
+
+// Change font properties to `inherit` in Safari.
+::-webkit-file-upload-button {
+    font: inherit;
+}
+
+[hidden] {
+    display: none;
+}
+
+fieldset {
+    border: $width-border solid $color-border;
+    margin: $width-gap 0 0;
+    padding: 0 $width-gap $width-gap;
+}
+
+optgroup {
+    color: $color-text-muted;
+    font-style: normal;
+    font-weight: normal;
+}
+
+option {
+    color: $color-text;
+}
+
+progress {
+    width: 100%;
+}
+
+:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+//防止获取焦点时，出现边框
+
+a,
+img {
+    -webkit-touch-callout: none;
+    /* 禁止长按链接与图片弹出菜单 */
+}
+
+*:not(input, textarea) {
+    user-select: none; //之所以放在这里是因为如果放到body中会导致个别Android机型（Google  Nexus，Android 4.2.2）输入框无法输入
+}

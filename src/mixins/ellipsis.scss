@@ -1,0 +1,45 @@
+/**
+* 文字溢出显示省略号
+* 1. Opera 9-10.6
+* 2. Chrome 21+ bug https://bugs.webkit.org/show_bug.cgi?id=121902
+*/
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+/**
+ * 多行文字溢出显示省略号
+ * @type {[type]}
+ */
+@mixin multi-ellipsis($lines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+}
+
+/**
+ * 自动换行
+ * @type {[type]}
+ */
+@mixin text_wrap() {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/**
+ * 英文断字
+ * @type {[type]}
+ */
+@mixin hyphens() {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

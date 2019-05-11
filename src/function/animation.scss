@@ -1,0 +1,127 @@
+@keyframes ixu-slide-up-enter {
+    from {
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  @keyframes ixu-slide-up-leave {
+    to {
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  @keyframes ixu-slide-down-enter {
+    from {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+
+  @keyframes ixu-slide-down-leave {
+    to {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+
+  @keyframes ixu-slide-left-enter {
+    from {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  @keyframes ixu-slide-left-leave {
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  @keyframes ixu-slide-right-enter {
+    from {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  @keyframes ixu-slide-right-leave {
+    to {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  @keyframes ixu-fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes ixu-fade-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes ixu-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .ixu-fade {
+    &-enter-active {
+      animation: .3s ixu-fade-in;
+    }
+
+    &-leave-active {
+      animation: .3s ixu-fade-out;
+    }
+  }
+
+  .ixu-slide-up {
+    &-enter-active {
+      animation: ixu-slide-up-enter .3s both ease;
+    }
+
+    &-leave-active {
+      animation: ixu-slide-up-leave .3s both ease;
+    }
+  }
+
+  .ixu-slide-down {
+    &-enter-active {
+      animation: ixu-slide-down-enter .3s both ease;
+    }
+
+    &-leave-active {
+      animation: ixu-slide-down-leave .3s both ease;
+    }
+  }
+
+  .ixu-slide-left {
+    &-enter-active {
+      animation: ixu-slide-left-enter .3s both ease;
+    }
+
+    &-leave-active {
+      animation: ixu-slide-left-leave .3s both ease;
+    }
+  }
+
+  .ixu-slide-right {
+    &-enter-active {
+      animation: ixu-slide-right-enter .3s both ease;
+    }
+
+    &-leave-active {
+      animation: ixu-slide-right-leave .3s both ease;
+    }
+  }

@@ -1,0 +1,6 @@
+@import '../mixins/ellipsis';
+
+
+.ixu-ellipsis {
+    @extend .ellipsis;
+}

@@ -1,9 +1,0 @@
-/**
- * 像素转 rem
- * @param {string} $px 像素值
- * @param {string} $remUnit 1rem 的像素值
- * @return {string}
- */
-@function _px2rem($px, $remUnit: 750) {
-  @return ($px / $remUnit) * 1rem;
-}

@@ -1,6 +1,6 @@
 {
   "name": "ixu.css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ixu.css",
   "author": {
     "email": "i@janecc.com",
@@ -19,6 +19,7 @@
     "sass",
     "css"
   ],
+  "main": "dist/ixu.css",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -44,11 +45,6 @@
     "postcss": "^6.0.8",
     "postcss-cssnext": "^3.0.2"
   },
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
-  },
-  "main": "dist/ixu.css",
   "bugs": {
     "url": "https://github.com/ubuntuvim/randomNichname/issues"
   },
